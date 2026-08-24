@@ -1,0 +1,62 @@
+.einstellungen-overlay {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
+
+.einstellungen-overlay-kopf {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.einstellungen-overlay-kopf h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.einstellungen-overlay-inhalt {
+  flex: 1;
+  padding-top: 12px;
+}
+
+.einstellungen-abschnitt {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.einstellungen-abschnitt h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.einstellungen-hinweis {
+  color: var(--ink2);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.einstellungen-datei-input {
+  display: none;
+}
+
+.einstellungen-fehler {
+  color: var(--ochre);
+  font-size: 14px;
+}
+
+.einstellungen-import-bestaetigung {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.einstellungen-import-bestaetigung-inhalt {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  max-width: 340px;
+}

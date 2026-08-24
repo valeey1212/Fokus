@@ -1,0 +1,26 @@
+.punkte {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.punkte-reihe {
+  display: flex;
+  gap: 5px;
+}
+
+.punkt {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.punkt-voll {
+  background: var(--pine);
+}
+
+.punkte-zahl {
+  font-size: 13px;
+  color: var(--ink2);
+}

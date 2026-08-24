@@ -1,0 +1,104 @@
+.fokus-timer {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+  align-items: stretch;
+}
+
+.fokus-timer-kopf {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.fokus-timer-mitte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.fokus-timer-titel {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.fokus-timer-schritt {
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 320px;
+}
+
+.fokus-timer-zeit {
+  font-size: 64px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.fokus-timer-fuss {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0 28px;
+}
+
+.fokus-timer-keeper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  gap: 16px;
+}
+
+.fokus-timer-zeit-klein {
+  font-size: 20px;
+  color: var(--ink2);
+  text-align: center;
+}
+
+.fokus-timer-keeper-feld {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: transparent;
+  resize: none;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.fokus-timer-keeper-fuss {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.fokus-timer-frage,
+.fokus-timer-abbruch {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.fokus-timer-frage-titel {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.fokus-timer-frage-hinweis {
+  color: var(--ink2);
+  margin-bottom: 8px;
+}
+
+.fokus-timer-frage .button-primaer,
+.fokus-timer-frage .button-sekundaer {
+  width: 100%;
+  max-width: 320px;
+}

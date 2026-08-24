@@ -1,0 +1,10 @@
+.listen-titel {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.listen-hinweis {
+  color: var(--ink2);
+  font-size: 15px;
+}

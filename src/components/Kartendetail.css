@@ -1,0 +1,139 @@
+.kartendetail {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
+
+.kartendetail-kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.kartendetail-loeschen-bestaetigen {
+  display: flex;
+  gap: 4px;
+}
+
+.kartendetail-inhalt {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 8px 0 24px;
+}
+
+.kartendetail-titel {
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+}
+
+.kartendetail-feld-gruppe {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kartendetail-label {
+  font-size: 13px;
+  color: var(--ink2);
+  font-weight: 500;
+}
+
+.kartendetail-label-zeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kartendetail-feld {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 15px;
+  width: 100%;
+}
+
+.kartendetail-hilfstext {
+  color: var(--ink2);
+  font-size: 13px;
+}
+
+.kartendetail-schritte {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kartendetail-schritt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kartendetail-checkbox {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink3);
+  flex-shrink: 0;
+}
+
+.kartendetail-checkbox.erledigt {
+  background: var(--pine);
+  border-color: var(--pine);
+}
+
+.kartendetail-schritt-text {
+  flex: 1;
+  min-height: 40px;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  padding: 0 4px;
+}
+
+.kartendetail-schritt-hinzufuegen {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.kartendetail-schritt-hinzufuegen .kartendetail-feld {
+  flex: 1;
+}
+
+.kartendetail-termin-zeile {
+  display: flex;
+  gap: 16px;
+}
+
+.kartendetail-termin-zeile > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kartendetail-termin-label {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.kartendetail-fuss {
+  display: flex;
+  gap: 10px;
+  padding: 12px 0 24px;
+}
+
+.kartendetail-fuss > button {
+  flex: 1;
+}

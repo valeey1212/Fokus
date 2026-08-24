@@ -1,0 +1,86 @@
+.karten-assistent {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
+
+.karten-assistent-kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.karten-assistent-schritt {
+  color: var(--ink3);
+  font-size: 14px;
+}
+
+.karten-assistent-inhalt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.karten-assistent-inhalt h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.karten-assistent-hilfstext {
+  color: var(--ink2);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.karten-assistent-feld {
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  font-size: 16px;
+  width: 100%;
+}
+
+.karten-assistent-schritte-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.karten-assistent-schritt-zeile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.karten-assistent-schritt-zeile .karten-assistent-feld {
+  flex: 1;
+}
+
+.karten-assistent-termin-optionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.karten-assistent-termin-optionen .aktiv {
+  background: var(--pine-soft);
+  border-color: var(--pine);
+  color: var(--pine);
+}
+
+.karten-assistent-fuss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 0 24px;
+}
+
+.karten-assistent-fuss .button-primaer {
+  margin-left: auto;
+}

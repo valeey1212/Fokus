@@ -1,0 +1,39 @@
+.ablage-titel {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.ablage-leer-hinweis {
+  color: var(--ink3);
+  font-size: 14px;
+}
+
+.ablage-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ablage-eintrag {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ablage-eintrag-inhalt {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ablage-eintrag-text {
+  font-size: 15px;
+}
+
+.ablage-eintrag-datum {
+  font-size: 12px;
+  color: var(--ink3);
+}

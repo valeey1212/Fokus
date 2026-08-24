@@ -1,0 +1,190 @@
+.board-kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.board-kopf h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.board-heute-abgelaufen {
+  padding: 14px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.board-heute-abgelaufen-optionen {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.board-plaetze {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.aktive-platz-karte {
+  display: flex;
+  flex-direction: column;
+}
+
+.aktive-platz-karte-hauptbereich {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+.aktive-platz-karte-kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.aktive-platz-karte-titel {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.aktive-platz-karte-schritt {
+  color: var(--ink2);
+  font-size: 15px;
+}
+
+.aktive-platz-karte-fuss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.aktive-platz-karte-erneuerung {
+  padding: 0 16px 14px;
+  color: var(--ink2);
+  font-size: 13px;
+}
+
+.aktive-platz-karte-ansehen {
+  text-decoration: underline;
+  color: var(--ink2);
+}
+
+.aktive-platz-karte-erneuerung-optionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.board-platz-frei {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.board-platz-frei-ueberzogen {
+  background: var(--pine-soft);
+}
+
+.board-platz-frei-text {
+  font-family: var(--schrift-serif);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--ink2);
+}
+
+.board-platz-nur-heute .karte {
+  border-style: dashed;
+}
+
+.board-abschnitt {
+  margin-bottom: 28px;
+}
+
+.board-abschnitt h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink2);
+  margin-bottom: 12px;
+}
+
+.board-leer-hinweis {
+  color: var(--ink3);
+  font-size: 14px;
+}
+
+.board-naechstes-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.board-naechstes-eintrag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.board-naechstes-inhalt {
+  flex: 1;
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.board-naechstes-titel {
+  font-weight: 500;
+}
+
+.board-naechstes-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board-ablage-zugang {
+  min-height: 44px;
+  color: var(--ink2);
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.board-fertig-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.board-fertig-eintrag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 4px;
+  color: var(--ink2);
+  font-size: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.board-fertig-datum {
+  font-size: 12px;
+  color: var(--ink3);
+}

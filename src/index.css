@@ -1,0 +1,177 @@
+:root {
+  --paper: #f2f3ef;
+  --card: #fcfdfb;
+  --ink: #1c211e;
+  --ink2: #5d655c;
+  --ink3: #8d948a;
+  --line: #dde1d9;
+  --pine: #35604f;
+  --pine-soft: #e3ece5;
+  --ochre: #8a6a3d;
+  --ochre-soft: #f1e9db;
+
+  --schrift-ui: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --schrift-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --schrift-serif: 'Instrument Serif', Georgia, serif;
+
+  --radius: 14px;
+  --nav-hoehe: 64px;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--schrift-ui);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+#root {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.karte {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.mono {
+  font-family: var(--schrift-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.button-primaer {
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 12px;
+  background: var(--pine);
+  color: var(--card);
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-primaer:disabled {
+  opacity: 0.5;
+}
+
+.button-sekundaer {
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-text {
+  min-height: 44px;
+  padding: 0 8px;
+  color: var(--ink2);
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chip-frist {
+  background: var(--ochre-soft);
+  color: var(--ochre);
+}
+
+.chip-wunsch {
+  background: var(--line);
+  color: var(--ink2);
+}
+
+.bildschirm {
+  flex: 1;
+  overflow-y: auto;
+  padding: max(20px, env(safe-area-inset-top)) 20px calc(var(--nav-hoehe) + 32px);
+}
+
+.vollbild {
+  position: fixed;
+  inset: 0;
+  background: var(--paper);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

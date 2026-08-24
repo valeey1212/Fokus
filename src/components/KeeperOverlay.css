@@ -1,0 +1,28 @@
+.keeper-overlay {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
+
+.keeper-overlay-kopf {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.keeper-overlay-feld {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: transparent;
+  resize: none;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--ink);
+  padding: 8px 0;
+}
+
+.keeper-overlay-fuss {
+  padding: 16px 0 24px;
+  display: flex;
+  justify-content: flex-end;
+}

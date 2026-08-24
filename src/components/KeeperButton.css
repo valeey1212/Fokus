@@ -1,0 +1,17 @@
+.keeper-button {
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: calc(var(--nav-hoehe) + env(safe-area-inset-bottom) + 16px);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--pine);
+  color: var(--card);
+  font-size: 28px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(28, 33, 30, 0.22);
+  z-index: 20;
+}

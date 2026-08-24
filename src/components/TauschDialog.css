@@ -1,0 +1,53 @@
+.tausch-dialog {
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
+
+.tausch-dialog-kopf {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 0;
+}
+
+.tausch-dialog-inhalt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.tausch-dialog-inhalt h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tausch-dialog-hinweis {
+  color: var(--ink2);
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.tausch-dialog-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tausch-dialog-karte {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+}
+
+.tausch-dialog-karte-titel {
+  font-weight: 500;
+}
