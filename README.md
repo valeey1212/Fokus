@@ -21,4 +21,6 @@ npm run build
 
 Push nach `main` löst den GitHub-Actions-Workflow aus, der die App baut und auf GitHub Pages veröffentlicht (siehe `.github/workflows/deploy.yml`). Unter **Settings → Pages** muss die Quelle einmalig auf „GitHub Actions" gestellt werden.
 
-Die App ist danach unter `https://<benutzername>.github.io/fokus/` erreichbar und kann dort über „Zum Home-Bildschirm" installiert werden.
+Die App ist danach unter `https://<benutzername>.github.io/Fokus/` erreichbar und kann dort über „Zum Home-Bildschirm" installiert werden.
+
+Der Pfad ist case-sensitiv: Er muss exakt der Schreibweise des Repo-Namens entsprechen und mit `base` in `vite.config.ts` sowie `start_url`/`scope`/`id` in `public/manifest.webmanifest` übereinstimmen.

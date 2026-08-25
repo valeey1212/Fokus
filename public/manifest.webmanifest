@@ -1,10 +1,10 @@
 {
-  "id": "/fokus/",
+  "id": "/Fokus/",
   "name": "Fokus",
   "short_name": "Fokus",
   "description": "Persönliche Produktivitäts-App: Gedanken festhalten, wenige Dinge zu Ende bringen, schrittweise Fokus aufbauen.",
-  "start_url": "/fokus/",
-  "scope": "/fokus/",
+  "start_url": "/Fokus/",
+  "scope": "/Fokus/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#F2F3EF",
