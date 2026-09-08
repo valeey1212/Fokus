@@ -1,0 +1,155 @@
+:root {
+  --nacht: #20222e;
+  --nacht-tief: #14161f;
+  --panel: #2b2f3f;
+  --panel-hell: #3b4152;
+  --rahmen: #59607a;
+  --tinte: #f2f3ef;
+  --tinte2: #b9bfd0;
+  --gold: #ffd66b;
+  --gruen: #6bd49a;
+  --blau: #7fb7e8;
+  --lila: #b79be0;
+  --warn: #e8a33d;
+  --pixel: 'Press Start 2P', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--nacht-tief);
+  color: var(--tinte);
+  font-family: var(--pixel);
+  font-size: 10px;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+button {
+  font-family: inherit;
+  font-size: 9px;
+  color: var(--tinte);
+  background: var(--panel-hell);
+  border: 2px solid var(--rahmen);
+  padding: 10px 12px;
+  min-height: 44px;
+  cursor: pointer;
+  box-shadow: inset -2px -2px 0 rgba(0, 0, 0, 0.35), inset 2px 2px 0 rgba(255, 255, 255, 0.12);
+}
+
+button:active {
+  box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.35);
+  transform: translateY(1px);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.haupt {
+  background: var(--gruen);
+  color: var(--nacht-tief);
+  border-color: #3f9a70;
+}
+
+button.gefahr {
+  background: var(--panel);
+  color: var(--warn);
+}
+
+button.klein {
+  min-height: 34px;
+  padding: 6px 8px;
+  font-size: 8px;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 9px;
+  line-height: 1.7;
+  width: 100%;
+  color: var(--tinte);
+  background: var(--nacht-tief);
+  border: 2px solid var(--rahmen);
+  padding: 10px;
+  min-height: 44px;
+}
+
+textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+label > span {
+  display: block;
+  color: var(--tinte2);
+  margin-bottom: 6px;
+  font-size: 8px;
+}
+
+a {
+  color: var(--blau);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 11px;
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+.karte {
+  background: var(--panel);
+  border: 2px solid var(--rahmen);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.zeile {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.leise {
+  color: var(--tinte2);
+  font-size: 8px;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

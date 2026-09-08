@@ -1,0 +1,16 @@
+{
+  "name": "KI-Agenten-Büro",
+  "short_name": "Büro",
+  "description": "Ein 8-Bit-Büro voller KI-Mitarbeiter, die echte Aufgaben erledigen.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#20222E",
+  "theme_color": "#20222E",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

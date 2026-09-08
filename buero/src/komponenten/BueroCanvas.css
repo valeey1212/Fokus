@@ -1,0 +1,73 @@
+.buero-buehne {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 256 / 190;
+  background: #20222e;
+  border: 2px solid var(--rahmen);
+  box-shadow: 0 0 0 2px #14161f;
+  overflow: hidden;
+}
+
+.buero-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.buero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.figur-knopf {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background: none;
+  border: 0;
+  padding: 0 6px 2px;
+  min-height: 44px;
+  min-width: 44px;
+  transform-origin: bottom center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  cursor: pointer;
+  color: var(--tinte);
+}
+
+.figur-name {
+  font-size: 6px;
+  background: rgba(20, 22, 31, 0.8);
+  color: #f2f3ef;
+  padding: 2px 3px;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.figur-status {
+  font-size: 6px;
+  color: #ffd66b;
+  line-height: 1;
+  min-height: 6px;
+}
+
+.sprechblase {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 140px;
+  background: #f2f3ef;
+  color: #20222e;
+  font-size: 6px;
+  line-height: 1.6;
+  padding: 4px 5px;
+  border: 2px solid #20222e;
+  margin-bottom: 4px;
+  text-align: left;
+  white-space: normal;
+}

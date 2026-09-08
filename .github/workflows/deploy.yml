@@ -25,6 +25,14 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+
+      # Das KI-Agenten-Büro liegt als eigene App unter /buero/.
+      - run: npm ci
+        working-directory: buero
+      - run: npm run build
+        working-directory: buero
+      - run: cp -r buero/dist dist/buero
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
