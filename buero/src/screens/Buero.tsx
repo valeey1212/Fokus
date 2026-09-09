@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Zustand } from '../typen'
-import { BueroCanvas } from '../komponenten/BueroCanvas'
+import { IsoBuero } from '../komponenten/IsoBuero'
 import { MitarbeiterDialog } from '../komponenten/MitarbeiterDialog'
 import { EinstellenDialog } from '../komponenten/EinstellenDialog'
 import { Shop } from '../komponenten/Shop'
@@ -62,7 +62,7 @@ export function Buero({ zustand, zuAufgaben }: Props) {
         <i style={{ width: `${fortschritt}%` }} />
       </div>
 
-      <BueroCanvas zustand={zustand} aufMitarbeiter={setOffen} blasen={blasen} />
+      <IsoBuero zustand={zustand} aufMitarbeiter={setOffen} blasen={blasen} />
 
       <div className="zeile" style={{ marginTop: 12 }}>
         <button type="button" className="haupt" onClick={() => setEinstellen(true)}>

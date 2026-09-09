@@ -1,66 +1,75 @@
-.buero-buehne {
+.iso-buehne {
   position: relative;
   width: 100%;
-  aspect-ratio: 256 / 190;
-  background: #20222e;
+  aspect-ratio: 1248 / 846;
+  background: #241d18;
   border: 2px solid var(--rahmen);
   box-shadow: 0 0 0 2px #14161f;
   overflow: hidden;
 }
 
-.buero-canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
+.iso-boden,
+.iso-einheit {
+  position: absolute;
   image-rendering: pixelated;
+  pointer-events: none;
+  height: auto;
 }
 
-.buero-overlay {
-  position: absolute;
-  inset: 0;
+.iso-boden {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
-.figur-knopf {
+.iso-figur {
   position: absolute;
-  transform: translate(-50%, -100%);
+  transform: translateX(-50%);
   background: none;
   border: 0;
-  padding: 0 6px 2px;
-  min-height: 44px;
+  padding: 0 4px;
   min-width: 44px;
-  transform-origin: bottom center;
+  min-height: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  gap: 2px;
+  gap: 1px;
   cursor: pointer;
   color: var(--tinte);
 }
 
-.figur-name {
+.iso-figur img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  display: block;
+}
+
+.iso-name {
   font-size: 6px;
-  background: rgba(20, 22, 31, 0.8);
+  background: rgba(20, 22, 31, 0.82);
   color: #f2f3ef;
   padding: 2px 3px;
   white-space: nowrap;
   line-height: 1;
+  margin-top: -4px;
 }
 
-.figur-status {
+.iso-status {
   font-size: 6px;
   color: #ffd66b;
   line-height: 1;
   min-height: 6px;
 }
 
-.sprechblase {
+.iso-sprechblase {
   position: absolute;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
-  max-width: 140px;
+  max-width: 130px;
   background: #f2f3ef;
   color: #20222e;
   font-size: 6px;
@@ -70,4 +79,5 @@
   margin-bottom: 4px;
   text-align: left;
   white-space: normal;
+  z-index: 999;
 }

@@ -4,6 +4,9 @@ import { ROLLENVORLAGEN, VORNAMEN, type Rollenvorlage } from '../daten/vorlagen'
 import { stelleEin } from '../daten/aktionen'
 import { Dialog } from './Dialog'
 import { VerbindungFelder } from './VerbindungFelder'
+import { figurDatei } from '../spiel/iso'
+
+const BASIS = import.meta.env.BASE_URL + 'assets/pixelbuero/'
 
 type Props = { zustand: Zustand; schliessen: () => void }
 
@@ -62,7 +65,7 @@ export function EinstellenDialog({ zustand, schliessen }: Props) {
                 rolle: '',
                 kurz: '',
                 profil: '',
-                aussehen: Math.floor(Math.random() * 8),
+                aussehen: Math.floor(Math.random() * 10),
                 vorschlagRessourcen: [],
               })
             }
@@ -88,15 +91,15 @@ export function EinstellenDialog({ zustand, schliessen }: Props) {
 
           <label>
             <span>Aussehen</span>
-            <div className="zeile">
-              {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+            <div className="aussehen-auswahl">
+              {Array.from({ length: 10 }, (_, i) => i).map((i) => (
                 <button
                   key={i}
                   type="button"
-                  className={i === aussehen ? 'klein haupt' : 'klein'}
+                  className={i === aussehen ? 'aussehen-knopf aktiv' : 'aussehen-knopf'}
                   onClick={() => setAussehen(i)}
                 >
-                  {i + 1}
+                  <img src={`${BASIS}${figurDatei(i)}`} alt={`Aussehen ${i + 1}`} width={24} height={47} />
                 </button>
               ))}
             </div>

@@ -1,11 +1,20 @@
 # KI-Agenten-Büro
 
-Ein Büro voller KI-Mitarbeiter, dargestellt als 8-Bit-Spiel. Du stellst Leute ein, gibst
+Ein Büro voller KI-Mitarbeiter, dargestellt als isometrisches Pixel-Büro. Du stellst Leute ein, gibst
 ihnen ein Aufgabenprofil und Zugriff auf Ordner oder Programme, verteilst Aufträge – und
 siehst am Bildschirm, wer gerade arbeitet, wer wartet und wer durchs Büro läuft.
 
 Läuft komplett im Browser, installierbar als PWA. Alle Daten liegen lokal in IndexedDB,
 es gibt keinen Server und kein Konto.
+
+## Das Büro
+
+Der Raum ist ein fertiges Pixel-Art-Bild (`public/assets/pixelbuero/`), isometrisch, im
+Stardew-Valley-Look. Jede Abteilungs-Einheit (Design-Studio, Engineering-Lab, Sales-Office,
+Marketing-Ecke, Support-Basis) taucht automatisch auf, sobald genug Leute mit passender
+Rolle eingestellt sind – die Zuordnung steckt in `src/spiel/iso.ts` (`einheitFuerRolle`).
+Freie Mitarbeiter laufen durch die Gänge, arbeitende sitzen an ihrem Platz. Zehn Figuren
+stehen als Aussehen zur Auswahl.
 
 ## Schnellstart
 

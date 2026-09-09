@@ -107,7 +107,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  z-index: 20;
+  /* Höher als jeder Iso-Bühnen-Wert (Spalte+Reihe kann bis in die Hunderter gehen). */
+  z-index: 1000;
   overflow-y: auto;
 }
 
@@ -203,4 +204,31 @@ code {
   color: var(--gold);
   font-family: var(--pixel);
   font-size: 8px;
+}
+
+.aussehen-auswahl {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.aussehen-knopf {
+  padding: 4px;
+  min-height: 44px;
+  min-width: 34px;
+  background: var(--nacht-tief);
+  border: 2px solid var(--rahmen);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.aussehen-knopf img {
+  image-rendering: pixelated;
+  display: block;
+}
+
+.aussehen-knopf.aktiv {
+  border-color: var(--gold);
+  background: var(--panel-hell);
 }

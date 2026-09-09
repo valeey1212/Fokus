@@ -28,6 +28,6 @@ Der Pfad ist case-sensitiv: Er muss exakt der Schreibweise des Repo-Namens entsp
 ## KI-Agenten-Büro
 
 Im Ordner `buero/` liegt eine zweite, eigenständige App: ein Büro voller KI-Mitarbeiter im
-8-Bit-Stil. Du stellst Leute ein, gibst ihnen Aufgabenprofile und Zugriff auf Ordner oder
+isometrischen Pixel-Büro. Du stellst Leute ein, gibst ihnen Aufgabenprofile und Zugriff auf Ordner oder
 Postfächer, verteilst Aufträge und siehst zu, wie sie erledigt werden. Details in
 [`buero/README.md`](buero/README.md). Auf GitHub Pages liegt sie unter `/Fokus/buero/`.
