@@ -18,6 +18,20 @@ stehen als Aussehen zur Auswahl.
 
 ## Schnellstart
 
+**Als Programm auf dem Mac, mit eigenem Icon im Launchpad:**
+
+1. Repo lokal klonen (einmalig), dann im `buero`-Ordner **`Buero-starten.command`** doppelklicken.
+   Beim ersten Mal fragt macOS wegen der Herkunft nach – Rechtsklick → Öffnen genügt. Ein
+   Terminalfenster bleibt offen (das ist der lokale Server) und der Browser öffnet die App
+   unter `http://localhost:4180/Fokus/buero/`.
+2. Im Browser (Chrome oder Edge) rechts in der Adressleiste auf das Installieren-Symbol
+   klicken, oder Menü → „Büro installieren …“. Danach liegt ein eigenes Büro-Icon im
+   Launchpad bzw. Applications-Ordner, öffnet sich in einem eigenen Fenster ohne
+   Browser-Drumherum – wie eine echte App. Das Terminalfenster von Schritt 1 muss beim
+   Start weiterhin offen sein, es ist der Server dahinter.
+
+**Für die Entwicklung** (Live-Neuladen bei Codeänderungen):
+
 ```bash
 cd buero
 npm install
